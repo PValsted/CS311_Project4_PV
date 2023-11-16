@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Great Composers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <style>
+        .col-15 {
+            padding-top: 10px;
+            color: darkblue;
+            background-color: lightgray;
+        }
+        .col {
+            border-style: groove;
+            border-width: 2px;
+        }
+        .col-3 {
+            border-style: groove;
+            border-width: 2px;
+        }
+    </style>
+
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-15">
+                <h2 class="heading">Great Composers</h2>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                      </svg>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="home.html">Home</a>
+                      <a class="nav-link" href="bizet.html">Bizet</a>
+                      <a class="nav-link" href="mozart.html">Mozart</a>
+                      <a class="nav-link" href="puccini.html">Puccini</a>
+                      <a class="nav-link" href="verdi.html">Verdi</a>
+                      <a class="nav-link" href="wagner.html">Wagner</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul>
+                <li>Image on the menu bar at the top will not load despite me doing everything it says to do on the Bootstrap site. Solution: I found icons on Bootstrap's site and copied the code for the one I wanted and it loaded.</li>
+                <li>A further solution to the above issue: I simply made a dumb mistake with syntax and included a / at the beginning of the link. This was solved later, but I kept the icon on top because I like it.</li>
+                <li>When using grids in Bootstrap, the whole breakpoint system was hard to figure out. It caused the navbar to not align properly for example. Solution: figured out how to use container-fluid class</li>
+                <li>When linking to my own external stylesheet, none of the attributes ever changed. I tried multiple things, including moving the reference under the Bootstrap reference and adding !important to the attributes in case they were being overridden, but none of this worked. Solution: I simply switched to internal CSS.</li>
+                <li>Update to the above item: After some reflection, I finally figured out my issue, which was the same as the image issue caused by including an extra / at the beginning of the link. I linked my own stylesheet successfully but decided to keep the internal CSS for simplicity's sake just this time.</li>
+                <li>One of the challenges I faced was figuring out how to best approach the outline of the composer pages using a grid, as the layout calls for multiple rows next to one row. There are likely plenty of ways, more efficient ways even, but I discovered you could nest rows within a column with Bootstrap so that's the solution I went with.</li>
+                <li>In general, this project wasn't super challenging for me, but I did find I was super rusty on HTML and CSS. Because of this I suspect there are many things I could've done differently or more efficiently, and I need to refresh myself on it when I
+                    have more time. As for Bootstrap, it seems a bit complex and maybe a bit intimidating, but the flipside is I can see how impressive the amount of stuff you can do with it is. It makes a lot of things I remember doing
+                    with HTML a while back much simpler, and although it is nice to design everything manually, I enjoy the time saved and peace of mind using a framework gives me.
+                </li>
+                <li>The only outstanding issue I can really think of is the content of my introductory paragraph on my homepage. I didn't know what to say really, so in a final product, of course, it would be more fleshed out than a couple sentences.</li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Designed by: Patrick Valsted ©2023
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
